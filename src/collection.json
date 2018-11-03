@@ -1,0 +1,26 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "bigdata-schematics": {
+      "description": "A blank schematic.",
+      "factory": "./bigdata-schematics/index#bigdataSchematics"
+    },
+    "model": {
+      "description": "Generate model",
+      "factory": "./bigdata-schematics/index#model",
+      "schema": "./bigdata-schematics/schema.json"
+    },
+    "datagrid": {
+      "description": "Add datagrid the project",
+      "factory": "./datagrid/index",
+      "schema": "./datagrid/schema.json",
+      "hidden": true
+    },
+    "ng-add": {
+      "description": "Add @clr/angular and generage App to the project",
+      "factory": "./ng-add/index",
+      "schema": "./ng-add/schema.json",
+      "hidden": true
+    }
+  }
+}

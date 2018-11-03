@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "DatagridSchema",
+  "title": "데이터그리드를 생성",
+  "type": "object",
+  "properties": {
+    "props": {
+      "type": "string",
+      "description": "모델 속성을 문자열로 표현"
+    },
+    "name": {
+      "type": "string",
+      "description": "모델 이름",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "service": {
+      "type": "boolean",
+      "description": "서비스 추가 여부"
+    }
+  },
+  "required": ["name", "props"]
+}

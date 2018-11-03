@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "bigdata-schematics/ng-add",
+  "title": "Add @clr/angular to the project",
+  "description": "NOTE: Does not work in the --dry-run mode",
+  "type": "object",
+  "properties": {
+    "applyContainer": {
+      "type": "boolean",
+      "description": "clr-main-container와 clr-header 추가",
+      "default": "true"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}
